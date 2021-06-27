@@ -1,0 +1,13 @@
+user "root"
+password "space"
+
+use estrella
+db.createCollection("data")
+db.createCollection("sensor1")
+
+mongodb+srv://root:space@cluster0.dw9op.mongodb.net/test
+--conexión compass--
+mongo "mongodb+srv://cluster0.dw9op.mongodb.net/estrella" --username root
+--conexion SHELL--
+mongodb+srv://root:space@cluster0.dw9op.mongodb.net/space?retryWrites=true&w=majority
+--conexion nodejs--
